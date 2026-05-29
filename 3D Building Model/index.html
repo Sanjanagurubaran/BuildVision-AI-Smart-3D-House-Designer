@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>BuildVision AI</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="style.css">
+
+</head>
+
+<body>
+
+  <!-- ======================
+       TITLE
+  ======================= -->
+
+  <div class="title">
+
+    3D Building Reconstruction
+
+  </div>
+
+
+
+  <!-- ======================
+       CONTROL PANEL
+  ======================= -->
+
+  <div class="upload-card">
+
+    <h2>
+      Build House
+    </h2>
+
+    <p>
+      Customize and generate
+      AI-powered transparent 3D houses
+    </p>
+
+
+
+    <!-- ======================
+         WALL COLOR
+    ======================= -->
+
+    <label>
+      Wall Color
+    </label>
+
+    <input
+      type="color"
+      id="wallColor"
+      value="#ffffff"
+    >
+
+
+
+
+    <!-- ======================
+         ROOF TYPE
+    ======================= -->
+
+    <label>
+      Roof Type
+    </label>
+
+    <select id="roofType">
+
+      <option value="cone">
+        Triangle Roof
+      </option>
+
+      <option value="flat">
+        Flat Roof
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         HOUSE WIDTH
+    ======================= -->
+
+    <label>
+      House Width
+    </label>
+
+    <input
+      type="range"
+      id="houseWidth"
+      min="4"
+      max="20"
+      value="8"
+    >
+
+
+
+
+    <!-- ======================
+         HOUSE HEIGHT
+    ======================= -->
+
+    <label>
+      House Height
+    </label>
+
+    <input
+      type="range"
+      id="houseHeight"
+      min="2"
+      max="10"
+      value="4"
+    >
+
+
+
+
+    <!-- ======================
+         HOUSE DEPTH
+    ======================= -->
+
+    <label>
+      House Depth
+    </label>
+
+    <input
+      type="range"
+      id="houseDepth"
+      min="4"
+      max="20"
+      value="8"
+    >
+
+
+
+
+    <!-- ======================
+         FLOORS
+    ======================= -->
+
+    <label>
+      Floors
+    </label>
+
+    <input
+      type="number"
+      id="floors"
+      min="1"
+      max="5"
+      value="1"
+    >
+
+
+
+
+    <!-- ======================
+         GARDEN
+    ======================= -->
+
+    <label>
+      Garden
+    </label>
+
+    <select id="garden">
+
+      <option value="yes">
+        Yes
+      </option>
+
+      <option value="no">
+        No
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         BALCONY
+    ======================= -->
+
+    <label>
+      Balcony
+    </label>
+
+    <select id="balcony">
+
+      <option value="yes">
+        Yes
+      </option>
+
+      <option value="no">
+        No
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         SOFA REQUIRED
+    ======================= -->
+
+    <label>
+      Sofa
+    </label>
+
+    <select id="sofaNeeded">
+
+      <option value="yes">
+        Yes
+      </option>
+
+      <option value="no">
+        No
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         SOFA COLOR
+    ======================= -->
+
+    <label>
+      Sofa Color
+    </label>
+
+    <input
+      type="color"
+      id="sofaColor"
+      value="#8b5cf6"
+    >
+
+
+
+
+    <!-- ======================
+         KITCHEN REQUIRED
+    ======================= -->
+
+    <label>
+      Kitchen
+    </label>
+
+    <select id="kitchenNeeded">
+
+      <option value="yes">
+        Yes
+      </option>
+
+      <option value="no">
+        No
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         KITCHEN COLOR
+    ======================= -->
+
+    <label>
+      Kitchen Color
+    </label>
+
+    <input
+      type="color"
+      id="kitchenColor"
+      value="#8b4513"
+    >
+
+
+
+
+    <!-- ======================
+         BEDROOMS
+    ======================= -->
+
+    <label>
+      Bedrooms
+    </label>
+
+    <input
+      type="number"
+      id="bedroomCount"
+      min="1"
+      max="6"
+      value="1"
+    >
+
+
+
+
+    <!-- ======================
+         BED COLOR
+    ======================= -->
+
+    <label>
+      Bed Color
+    </label>
+
+    <input
+      type="color"
+      id="bedColor"
+      value="#9333ea"
+    >
+
+
+
+
+    <!-- ======================
+         TV REQUIRED
+    ======================= -->
+
+    <label>
+      TV
+    </label>
+
+    <select id="tvNeeded">
+
+      <option value="yes">
+        Yes
+      </option>
+
+      <option value="no">
+        No
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         DINING TABLE
+    ======================= -->
+
+    <label>
+      Dining Table
+    </label>
+
+    <select id="diningNeeded">
+
+      <option value="yes">
+        Yes
+      </option>
+
+      <option value="no">
+        No
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         GARAGE
+    ======================= -->
+
+    <label>
+      Garage
+    </label>
+
+    <select id="garageNeeded">
+
+      <option value="yes">
+        Yes
+      </option>
+
+      <option value="no">
+        No
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         PARKING WIDTH
+    ======================= -->
+
+    <label>
+      Parking Width
+    </label>
+
+    <input
+      type="range"
+      id="parkingWidth"
+      min="4"
+      max="15"
+      value="6"
+    >
+
+
+
+
+    <!-- ======================
+         STAIRS
+    ======================= -->
+
+    <label>
+      Stairs
+    </label>
+
+    <select id="stairsNeeded">
+
+      <option value="yes">
+        Yes
+      </option>
+
+      <option value="no">
+        No
+      </option>
+
+    </select>
+
+
+
+
+    <!-- ======================
+         GENERATE BUTTON
+    ======================= -->
+
+    <button id="generateBtn">
+
+      Generate House
+
+    </button>
+
+  </div>
+
+
+
+
+  <!-- ======================
+       THREEJS CANVAS
+  ======================= -->
+
+  <canvas id="bg"></canvas>
+
+
+
+
+  <!-- ======================
+       SCRIPT
+  ======================= -->
+
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
