@@ -9,12 +9,21 @@ Developed a web-based 3D house generation platform using Three.js that enables r
 
 Features
 🏠 Dynamic 3D House Generation
+
 🎨 Custom Wall, Roof & Furniture Colors
+
 🛋️ Interior Design Customization
+
 🛏️ Multiple Bedroom Configuration
+
 🍽️ Kitchen & Dining Area Planning
+
 🚗 Garage & Parking Design
+
 🌳 Garden and Balcony Options
+
 🔍 Interactive 3D Visualization
+
 ⚡ Real-Time Design Updates
+
 📐 Adjustable House Dimensions
